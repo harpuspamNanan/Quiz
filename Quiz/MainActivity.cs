@@ -12,6 +12,7 @@ namespace Quiz
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
+        RadioButton ans1, ans2, ans3, ans4, ans5;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {

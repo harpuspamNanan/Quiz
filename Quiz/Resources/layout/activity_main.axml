@@ -1,85 +1,257 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
 	<LinearLayout
 		android:orientation="vertical"
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:layout_width="match_parent"
-		android:layout_height="90dp"
-		android:id="@+id/linearLayout1" >
+		android:layout_height="wrap_content"
+		android:id="@+id/linearLayout1">
 		<TextView
 			android:text="Questions"
 			android:textAppearance="?android:attr/textAppearanceLarge"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:id="@+id/questionsTv" />
-		
-		<GridLayout
+		<LinearLayout
+			android:orientation="vertical"
 			android:minWidth="25px"
 			android:minHeight="25px"
-			android:layout_width="700dp"
-			android:layout_height="900dp"
-			android:rowCount="10"
-			android:columnCount="1"
-			android:id="@+id/gridLayout1" >
-			
-			<LinearLayout	
-				android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="57.5dp"
+			android:id="@+id/subLinearLayout1"
+			android:layout_marginTop="30px"
+			android:layout_marginBottom="-20px">
+			<TextView
+				android:text="1. What is the Capital of Canada?"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="290dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/ques1TV"
+				android:textSize="32px" />
+			<RadioGroup
 				android:minWidth="25px"
 				android:minHeight="25px"
 				android:layout_width="match_parent"
-			    android:layout_height="match_parent"
-		        android:id="@+id/subLinearLayout1" >
-				<TextView
-				   android:text="1. What is the Capital of Canada?"
-				   android:textAppearance="?android:attr/textAppearanceMedium"
-				   android:layout_width="290dp"
-				   android:layout_height="wrap_content"
-				   android:id="@+id/canadaqTV"/>	
-			    <RadioGroup
-			       android:minWidth="25px"
-			       android:minHeight="25px"
-			       android:layout_width="match_parent"
-			       android:layout_height="wrap_content"
-			       android:orientation="horizontal"
-			       android:id="@+id/RdBtnG1">
-			       <RadioButton
-				      android:layout_width="wrap_content"
-				      android:layout_height="wrap_content"
-				      android:text="Vancouver"
-				      android:id="@+id/vancouverRdBtnG1" />
-			       <RadioButton
-				      android:layout_width="wrap_content"
-				      android:layout_height="wrap_content"
-				      android:text="Montreal"
-				      android:id="@+id/montrealRdBtnG1" />
-			       <RadioButton
-				      android:layout_width="wrap_content"
-				      android:layout_height="wrap_content"
-				      android:text="Ottawa"
-				      android:id="@+id/ottawaRdBtnG1" />
-			       <RadioButton
-				      android:layout_width="wrap_content"
-				      android:layout_height="wrap_content"
-				      android:text="Toronto"
-				      android:id="@+id/torontoRdBtnG1" />
-			    </RadioGroup>
-		    </LinearLayout>
-
-
-		</GridLayout>
-				
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:id="@+id/rdBtn1">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Vancouver"
+					android:id="@+id/rdBtn11"
+					android:textSize="24px" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Montreal"
+					android:id="@+id/rdBtn12"
+					android:textSize="24px" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Ottawa"
+					android:id="@+id/rdBtn13"
+					android:textSize="24px" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Toronto"
+					android:id="@+id/rdBtn14"
+					android:textSize="24px" />
+			</RadioGroup>
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="67.5dp"
+			android:id="@+id/subLinearLayout2"
+			android:layout_marginTop="25px">
+			<TextView
+				android:text="2. Hi"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="290dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/ques2TV"
+				android:textSize="32px" />
+			<RadioGroup
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:id="@+id/rdBtn2">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Vancouver"
+					android:id="@+id/rdBtn21"
+					android:textSize="24px" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Montreal"
+					android:id="@+id/rdBtn22"
+					android:textSize="24px" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Ottawa"
+					android:id="@+id/rdBtn23"
+					android:textSize="24px" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Toront"
+					android:id="@+id/rdBtn24"
+					android:textSize="24px" />
+			</RadioGroup>
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="90dp"
+			android:id="@+id/subLinearLayout2">
+			<TextView
+				android:text="3. Hi"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="290dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/ques3TV"
+				android:textSize="32px" />
+			<RadioGroup
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:id="@+id/rdBtn3">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Vancouver"
+					android:id="@+id/rdBtn31"
+					android:textSize="24px" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Montreal"
+					android:id="@+id/rdBtn32"
+					android:textSize="24px" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Ottawa"
+					android:id="@+id/rdBtn33"
+					android:textSize="24px" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Toront"
+					android:id="@+id/rdBtn34"
+					android:textSize="24px" />
+			</RadioGroup>
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="90dp"
+			android:id="@+id/subLinearLayout2">
+			<TextView
+				android:text="4. Hi"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="290dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/ques4TV"/>
+			<RadioGroup
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:id="@+id/rdBtn4">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Vancouver"
+					android:id="@+id/rdBtn41" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Montreal"
+					android:id="@+id/rdBtn42" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Ottawa"
+					android:id="@+id/rdBtn43" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Toront"
+					android:id="@+id/rdBtn44" />
+			</RadioGroup>
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="90dp"
+			android:id="@+id/subLinearLayout2">
+			<TextView
+				android:text="5. Hi"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="290dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/ques5TV"/>
+			<RadioGroup
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:id="@+id/rdBtn5">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Vancouver"
+					android:id="@+id/rdBtn51" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Montreal"
+					android:id="@+id/rdBtn52" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Ottawa"
+					android:id="@+id/rdBtn53" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Toront"
+					android:id="@+id/rdBtn54" />
+			</RadioGroup>
+		</LinearLayout>
+		<TextView
+			android:text="Total Score : "
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/scoreTv" />
 	</LinearLayout>
-	
-
-	
-
-
-
 
 </android.support.design.widget.CoordinatorLayout>
