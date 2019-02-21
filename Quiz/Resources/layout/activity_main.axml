@@ -66,7 +66,7 @@
 					android:id="@+id/rdBtn14"
 					android:textSize="24px" />
 			</RadioGroup>
-		</LinearLayout>
+		</LinearLayout> 
 		<LinearLayout
 			android:orientation="vertical"
 			android:minWidth="25px"
@@ -120,7 +120,7 @@
 			android:minWidth="25px"
 			android:minHeight="25px"
 			android:layout_width="match_parent"
-			android:layout_height="90dp"
+			android:layout_height="64.5dp"
 			android:id="@+id/subLinearLayout2">
 			<TextView
 				android:text="3. Hi"
@@ -167,14 +167,16 @@
 			android:minWidth="25px"
 			android:minHeight="25px"
 			android:layout_width="match_parent"
-			android:layout_height="90dp"
-			android:id="@+id/subLinearLayout2">
+			android:layout_height="64.5dp"
+			android:id="@+id/subLinearLayout2"
+			android:layout_marginBottom="0.0dp">
 			<TextView
 				android:text="4. Hi"
 				android:textAppearance="?android:attr/textAppearanceMedium"
 				android:layout_width="290dp"
 				android:layout_height="wrap_content"
-				android:id="@+id/ques4TV"/>
+				android:id="@+id/ques4TV"
+				android:textSize="32px" />
 			<RadioGroup
 				android:minWidth="25px"
 				android:minHeight="25px"
@@ -186,22 +188,26 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="Vancouver"
-					android:id="@+id/rdBtn41" />
+					android:id="@+id/rdBtn41"
+					android:textSize="24px" />
 				<RadioButton
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="Montreal"
-					android:id="@+id/rdBtn42" />
+					android:id="@+id/rdBtn42"
+					android:textSize="24px" />
 				<RadioButton
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="Ottawa"
-					android:id="@+id/rdBtn43" />
+					android:id="@+id/rdBtn43"
+					android:textSize="24px" />
 				<RadioButton
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="Toront"
-					android:id="@+id/rdBtn44" />
+					android:id="@+id/rdBtn44"
+					android:textSize="24px" />
 			</RadioGroup>
 		</LinearLayout>
 		<LinearLayout
@@ -216,7 +222,8 @@
 				android:textAppearance="?android:attr/textAppearanceMedium"
 				android:layout_width="290dp"
 				android:layout_height="wrap_content"
-				android:id="@+id/ques5TV"/>
+				android:id="@+id/ques5TV"
+				android:textSize="32px" />
 			<RadioGroup
 				android:minWidth="25px"
 				android:minHeight="25px"
@@ -228,22 +235,26 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="Vancouver"
-					android:id="@+id/rdBtn51" />
+					android:id="@+id/rdBtn51"
+					android:textSize="24px" />
 				<RadioButton
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="Montreal"
-					android:id="@+id/rdBtn52" />
+					android:id="@+id/rdBtn52"
+					android:textSize="24px" />
 				<RadioButton
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="Ottawa"
-					android:id="@+id/rdBtn53" />
+					android:id="@+id/rdBtn53"
+					android:textSize="24px" />
 				<RadioButton
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="Toront"
-					android:id="@+id/rdBtn54" />
+					android:id="@+id/rdBtn54"
+					android:textSize="24px" />
 			</RadioGroup>
 		</LinearLayout>
 		<TextView
@@ -251,7 +262,9 @@
 			android:textAppearance="?android:attr/textAppearanceLarge"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/scoreTv" />
+			android:id="@+id/scoreTv"
+			android:layout_marginTop="-55px"
+			android:textSize="43px" />
 	</LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>
