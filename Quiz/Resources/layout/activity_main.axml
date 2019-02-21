@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
 	<LinearLayout
 		android:orientation="vertical"
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
+		android:layout_height="90dp"
 		android:id="@+id/linearLayout1" >
 		<TextView
 			android:text="Questions"
@@ -17,7 +18,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:id="@+id/questionsTv" />
-
+		
 		<GridLayout
 			android:minWidth="25px"
 			android:minHeight="25px"
@@ -26,48 +27,55 @@
 			android:rowCount="10"
 			android:columnCount="1"
 			android:id="@+id/gridLayout1" >
-			<TextView
-				android:text="1. What is the Capital of Canada?"
-				android:textAppearance="?android:attr/textAppearanceMedium"
-				android:layout_width="290dp"
-				android:layout_height="wrap_content"
-				android:id="@+id/textView1"/>	
-			<RadioGroup
-			android:minWidth="25px"
-			android:minHeight="25px"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:orientation="horizontal"
-			android:id="@+id/radioGroup1">
-			<RadioButton
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:checked="true"
-				android:text="Vancouver"
-				android:id="@+id/radioButton1" />
-			<RadioButton
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Montreal"
-				android:id="@+id/radioButton2" />
-			<RadioButton
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Ottawa"
-				android:id="@+id/radioButton3" />
-			<RadioButton
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Toronto"
-				android:id="@+id/radioButton4" />
-		</RadioGroup>
 			
-			
-				
+			<LinearLayout	
+				android:orientation="vertical"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+		        android:id="@+id/subLinearLayout1" >
+				<TextView
+				   android:text="1. What is the Capital of Canada?"
+				   android:textAppearance="?android:attr/textAppearanceMedium"
+				   android:layout_width="290dp"
+				   android:layout_height="wrap_content"
+				   android:id="@+id/canadaqTV"/>	
+			    <RadioGroup
+			       android:minWidth="25px"
+			       android:minHeight="25px"
+			       android:layout_width="match_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal"
+			       android:id="@+id/RdBtnG1">
+			       <RadioButton
+				      android:layout_width="wrap_content"
+				      android:layout_height="wrap_content"
+				      android:text="Vancouver"
+				      android:id="@+id/vancouverRdBtnG1" />
+			       <RadioButton
+				      android:layout_width="wrap_content"
+				      android:layout_height="wrap_content"
+				      android:text="Montreal"
+				      android:id="@+id/montrealRdBtnG1" />
+			       <RadioButton
+				      android:layout_width="wrap_content"
+				      android:layout_height="wrap_content"
+				      android:text="Ottawa"
+				      android:id="@+id/ottawaRdBtnG1" />
+			       <RadioButton
+				      android:layout_width="wrap_content"
+				      android:layout_height="wrap_content"
+				      android:text="Toronto"
+				      android:id="@+id/torontoRdBtnG1" />
+			    </RadioGroup>
+		    </LinearLayout>
+
+
 		</GridLayout>
-		
-		
-		</LinearLayout>
+				
+	</LinearLayout>
+	
 
 	
 
