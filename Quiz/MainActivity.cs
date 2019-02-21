@@ -8,7 +8,7 @@ using Android.Views;
 using Android.Widget;
 
 namespace Quiz
-{
+{ 
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
